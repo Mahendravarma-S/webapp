@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mahendra Varma — Portfolio Intro</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #2e026d, #4a00e0, #5ee7df);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  .wrapper {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 45px;
+    width: 950px;
+    border-radius: 22px;
+    backdrop-filter: blur(12px) saturate(160%);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+    color: white;
+    animation: fadeIn 0.7s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.25s;
+  }
+  nav a:hover { opacity: 0.6; }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10px;
+  }
+  .text h1 {
+    font-size: 44px;
+    font-weight: 700;
+  }
+  .text h1 span {
+    background: linear-gradient(90deg, #ff7ac6, #00eaff, #99ff5e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .text p {
+    font-size: 18px;
+    margin-top: 14px;
+    line-height: 1.55;
+    opacity: 0.9;
+  }
+  .btns {
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+  }
+  button {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.23s, box-shadow 0.23s;
+  }
+  .primary-btn { background: #00eaff; color: #001f3f; }
+  .secondary-btn { background: rgba(255, 255, 255, 0.15); color: white; }
+  button:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
+
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 26px;
+    background: linear-gradient(135deg, #ff7ac6, #00eaff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  }
+
+  @media (max-width: 900px) {
+    .content { flex-direction: column; text-align: center; }
+    nav { display: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <div class="logo">MV</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+
+    <div class="content">
+      <div class="text">
+        <h1>Hello, I'm <span>Mahendra Varma</span></h1>
+        <p>Passionate Cloud & DevOps Engineer who loves deploying scalable architectures, building CI/CD automation, and exploring modern AWS serverless solutions. Always curious, always learning.</p>
+        <div class="btns">
+          <button class="primary-btn">View Projects</button>
+          <button class="secondary-btn">Download Resume</button>
+        </div>
+      </div>
+
+      <div class="profile-pic">MV</div>
+    </div>
+  </div>
+</body>
+</html>
